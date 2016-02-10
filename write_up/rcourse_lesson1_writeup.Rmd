@@ -1,0 +1,52 @@
+---
+title: 'R Course: Introduction'
+author: "Page Piccinini"
+date: "February 3, 2016"
+output: html_document
+---
+```{r}
+load("rcourse_introduction_environment.RData")
+```
+
+# Data
+
+Here is a look at our two dataframes.
+
+```{r}
+head(data)
+head(data_bl)
+```
+
+# Figures
+
+Here's a figure of the bilinguals compared to the monolinguals.
+
+```{r, fig.align='center'}
+data.plot
+```
+
+Here's a figure of the bilinguals separted by L2 proficiency.
+
+```{r, fig.align='center'}
+data_bl.plot
+```
+
+# Descriptive Statistics
+
+When looking at the summary statistics by group, bilinguals have much more variance than monolinguals.
+
+```{r}
+data_sum
+```
+
+However, when summarising within type of bilingual (level of L2 proficiency) we see where the variance comes from.
+
+```{r}
+data_bl_sum
+```
+
+To show how all three groups compare we can make a final figure with the bilinguals separated out by L2 profiency and still include the monolinguals.
+
+```{r, fig.align='center'}
+data_blwml.plot
+```
