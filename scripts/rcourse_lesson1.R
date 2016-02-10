@@ -43,9 +43,10 @@ data.plot = ggplot(data, aes(x = group, y = rt)) +
   xlab("Group") +
   # Customize the y-axis label
   ylab("Reaction times in ms") +
+  # Remove dark background
+  theme_bw() +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
-  theme_bw() + 
   theme(text=element_text(size=18), title=element_text(size=18),
         panel.border = element_blank(),
         panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
@@ -71,9 +72,10 @@ data_bl.plot = ggplot(data_bl, aes(x = type, y = rt)) +
   xlab("Proficiency in L2") +
   # Customize the y-axis label
   ylab("Reaction times in ms") +
+  # Remove dark background
+  theme_bw() +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
-  theme_bw() + 
   theme(text=element_text(size=18), title=element_text(size=18),
         panel.border = element_blank(),
         panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
@@ -99,9 +101,10 @@ data_blwml.plot = ggplot(data, aes(x = group, y = rt)) +
   xlab("Proficiency in L2") +
   # Customize the y-axis label
   ylab("Reaction times in ms") +
+  # Remove dark background
+  theme_bw() +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
-  theme_bw() + 
   theme(text=element_text(size=18), title=element_text(size=18),
         panel.border = element_blank(),
         panel.grid.major = element_blank(), panel.grid.minor = element_blank(),

@@ -2,7 +2,7 @@
 title: 'R Course: Lesson 1 - R Basics'
 author: "Page Piccinini"
 date: "February 11, 2016"
-output: html_document
+output: pdf_document
 ---
 ```{r}
 load("rcourse_lesson1_environment.RData")
