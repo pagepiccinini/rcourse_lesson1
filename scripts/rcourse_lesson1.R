@@ -123,7 +123,7 @@ dev.off()
 ## RUN DESCRIPTIVE STATISTICS ####
 # Summarise data
 data_sum = data %>%
-  # Say what you want to summarise by, here it's group
+  # Say what you want to summarise by, here it's 'group'
   group_by(group) %>%
   # Get mean, standard deviation, maximum, and minimum reaction times for each group
   summarise(rt_mean = mean(rt),
