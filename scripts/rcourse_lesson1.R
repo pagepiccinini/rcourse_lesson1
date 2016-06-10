@@ -48,7 +48,7 @@ data.plot = ggplot(data, aes(x = group, y = rt)) +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
   theme(text=element_text(size=18), title=element_text(size=18),
-        legend.position="none", legend.key=element_blank())
+        legend.position="none")
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/data.pdf")
@@ -73,7 +73,7 @@ data_bl.plot = ggplot(data_bl, aes(x = type, y = rt)) +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
   theme(text=element_text(size=18), title=element_text(size=18),
-        legend.position="none", legend.key=element_blank())
+        legend.position="none")
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/data_bl.pdf")
@@ -98,7 +98,7 @@ data_blwml.plot = ggplot(data, aes(x = group, y = rt)) +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
   theme(text=element_text(size=18), title=element_text(size=18),
-        legend.position="none", legend.key=element_blank())
+        legend.position="none")
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/data_blwml.pdf")
