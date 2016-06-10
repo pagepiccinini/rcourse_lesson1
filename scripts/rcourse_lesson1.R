@@ -44,15 +44,11 @@ data.plot = ggplot(data, aes(x = group, y = rt)) +
   # Customize the y-axis label
   ylab("Reaction times in ms") +
   # Remove dark background
-  theme_bw() +
+  theme_classic() +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
   theme(text=element_text(size=18), title=element_text(size=18),
-        panel.border = element_blank(),
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line = element_line(colour = "black"),
-        legend.position="none", legend.key=element_blank(),
-        strip.background = element_rect(color="white", fill="white"))
+        legend.position="none", legend.key=element_blank())
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/data.pdf")
@@ -73,15 +69,11 @@ data_bl.plot = ggplot(data_bl, aes(x = type, y = rt)) +
   # Customize the y-axis label
   ylab("Reaction times in ms") +
   # Remove dark background
-  theme_bw() +
+  theme_classic() +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
   theme(text=element_text(size=18), title=element_text(size=18),
-        panel.border = element_blank(),
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line = element_line(colour = "black"),
-        legend.position="none", legend.key=element_blank(),
-        strip.background = element_rect(color="white", fill="white"))
+        legend.position="none", legend.key=element_blank())
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/data_bl.pdf")
@@ -102,15 +94,11 @@ data_blwml.plot = ggplot(data, aes(x = group, y = rt)) +
   # Customize the y-axis label
   ylab("Reaction times in ms") +
   # Remove dark background
-  theme_bw() +
+  theme_classic() +
   # These are extras to make the figure (in my opinion) prettier,
   # look up each command to learn more
   theme(text=element_text(size=18), title=element_text(size=18),
-        panel.border = element_blank(),
-        panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-        axis.line = element_line(colour = "black"),
-        legend.position="none", legend.key=element_blank(),
-        strip.background = element_rect(color="white", fill="white"))
+        legend.position="none", legend.key=element_blank())
 
 # Write figure to a pdf in the 'figures' folder
 pdf("figures/data_blwml.pdf")
